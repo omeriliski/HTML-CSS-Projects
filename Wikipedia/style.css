@@ -1,0 +1,188 @@
+*{
+    border: 1px solid red;
+    font-family: Helvetica, sans-serif;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+#contentWrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.headerWrapper{
+    text-align: center;
+    
+}
+#header1{
+    padding-top: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    line-height: 10px;
+}
+#header2{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+#imgWrapper{
+    align-self: center;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#inputWrapper{
+    margin-top: 2rem;
+}
+#inputWrapper2{
+    margin: auto;
+    border: 1px solid lightgray;
+}
+#inputText{
+    width: 20rem;
+    height: 2.2rem;
+    border: none;
+    font-size: 16px;
+}
+#lensImage{
+    width: 3.5rem;
+    margin-bottom: -1rem;
+}
+#wikipediaImg{
+    width: 200px;
+}
+.languages{
+    color: #336AD0;
+}
+.margin1{
+    margin-left: 6rem;
+}
+.margin2{
+    margin-right: 6rem;
+}
+.margin3{
+    margin-left: 3rem;
+}
+.margin4{
+    margin-right: 3rem;
+}
+h4{
+    margin-top: 5px;
+   font-size: 16px;
+}
+p{
+    font-size: 13px;
+    color: gray;
+    margin-top: -18px;
+}
+.languageDiv:hover{
+    background-color: #eceff1;
+}
+.languageDiv{
+    font-size: 18px;
+}
+#selectLanguages{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+#buttonReadWrapper{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#buttonReadWrapper a{
+    text-decoration: none;
+}
+#buttonRead{
+    color:#336AD0;
+    border: 1px solid gray;
+    padding: 8px;
+    font-size: 15px;
+}
+#buttonRead:hover{
+    border: 2px solid #336AD0;
+}
+
+.content2Wrapper{
+    margin:2rem 5rem 0rem 5rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+    /* border-bottom: 1px solid gray; */
+}
+
+.logos{
+    width: 7rem;
+}
+
+.leftDiv{
+    padding:3rem;   
+}
+
+.rightDiv{
+    width: 70%;
+}
+
+.wikiLogosImg{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.wikiLogosContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    
+}
+.wikiLogosContainer:hover{
+    background-color: lightgray;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.leftDiv1{
+    padding:2rem .5rem .5rem .5rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+.leftDiv1 div p{
+    line-height: 1.5;
+}
+.leftDiv2{
+    background-color: #F8F9FA;
+}
+span{
+    color:#336AD0;
+}
+.footer{
+    text-align: center;
+}
+.read{
+    display: flex;
+    flex-direction: row;
+}
+.readLine1{   
+    width: 5rem; 
+    border-top: 1px solid gray; 
+    margin-top: 50px; 
+    margin-right: 10px;
+}
+.readLine2{   
+    width: 5rem; 
+    border-top: 1px solid gray; 
+    margin-top: 50px; 
+    margin-left: 10px;
+}
+h6{
+    color: #336AD0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 5px;
+}

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+main{
+    width: 820px;
+    height: 820px;
+    background-image: url("https://t3.ftcdn.net/jpg/03/72/89/42/360_F_372894220_pvZcRm6T6EkRLPcUBYvFCBKQ5TbM4rlj.jpg");
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 6px -6px 14px 4px rgba(0, 0, 0, 0.4);
+    transition: 1s;
+}
+button{
+    background-color: white;
+    height: 30px;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    background-color:#DDD2A6;
+    border-radius:15px ;
+}
+button:hover{
+    background-color:#d4ceb6;
+}
+button:active{
+    background-color:#DDD2A6;
+}
+section {
+    width: 750px;
+    height: 750px;
+    background: linear-gradient(61deg, rgba(198, 150, 129, 1) 12%, rgba(227, 188, 171, 0.2497373949579832) 25%, rgba(198, 150, 129, 1) 40%, rgba(227, 188, 171, 1) 55%, rgba(198, 150, 129, 1) 70%, rgba(227, 188, 171, 1) 86%);
+    background: url("https://i.pinimg.com/originals/6c/a1/ce/6ca1ce7b7f4728332f8899b198adf5ff.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.board-container {
+    width: 640px;
+    height: 640px;
+    background-color: #DDD2A6;
+    display: flex;
+    flex-wrap: wrap;
+}
+.letters-container{
+    display: flex;
+    margin-left: 20px;
+}
+.numbers-board-container{
+    display: flex;
+}
+.letter{
+    width:80px;
+    height: 20px;
+}
+.number{
+    width: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.odd{
+    transition: .3s;
+}
+
+.even {
+    background-color: black;
+}
+
+.fas {
+    font-size: 60px;
+    text-shadow: 9px -2px 10px rgb(63, 61, 61);
+}
+
+.team2 {
+    color: #b3613e;
+}
+
+.team1 {
+    color: white;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+/**************************rotate and hovers*************************************/
+input:checked + main{
+    transform: rotate(90deg);
+}
+
+input{
+    display: none;
+}
+label{
+    background-color: #B3613E;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 6px -6px 7px 1px rgba(0,0,0,0.4);
+    transition: .3s;
+}
+label:hover{
+    background-color: #d3825f;
+}
+label:active{
+    background-color: #B3613E;
+}
+
+h1{
+    visibility: hidden;
+    color: white;
+    font-size: 30px;
+}
+.cell:hover h1{
+    visibility:visible;
+}
+.odd:hover{
+    background-color: #f3eed7;
+    cursor: pointer;
+}
+.even:hover{
+    background-color: rgb(51, 49, 49);
+    cursor: pointer
+}

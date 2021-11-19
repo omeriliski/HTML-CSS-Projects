@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <button onclick="changeColor('lightgray','darkgreen','light')">Change Sceneria (Light)</button>
+    <button onclick="changeColor('#DDD2A6', 'black','dark')">Change Sceneria (Dark)</button>
+    <label for="rotate">Rotate</label>
+    <input id="rotate" type="checkbox">
+    <main>
+        <section>
+            <div class="letters-container">
+                <div class="letter">a</div>
+                <div class="letter">b</div>
+                <div class="letter">c</div>
+                <div class="letter">d</div>
+                <div class="letter">e</div>
+                <div class="letter">f</div>
+                <div class="letter">g</div>
+                <div class="letter">h</div>
+            </div>
+            <div class="numbers-board-container">
+                <div class="numbers-container">
+                    <div class="number">8</div>
+                    <div class="number">7</div>
+                    <div class="number">6</div>
+                    <div class="number">5</div>
+                    <div class="number">4</div>
+                    <div class="number">3</div>
+                    <div class="number">2</div>
+                    <div class="number">1</div>
+                </div>
+                <div class="board-container">
+                    <div class="cell odd"><i class="fas fa-chess-rook team2"></i></div>
+                    <div class="cell even"><i class="fas fa-chess-knight team2"></i></div>
+                    <div class="cell odd"><i class="fas fa-chess-bishop team2"></i></div>
+                    <div class="cell even"><i class="fas fa-chess-king team2"></i></div>
+                    <div class="cell odd"><i class="fas fa-chess-queen team2"></i></div>
+                    <div class="cell even"><i class="fas fa-chess-bishop team2"></i></div>
+                    <div class="cell odd"><i class="fas fa-chess-knight team2"></i></div>
+                    <div class="cell even"><i class="fas fa-chess-rook team2"></i></div>
+                    <div class="cell even"><i class="fas fa-chess-pawn team2"></i></div>
+                    <div class="cell odd"><i class="fas fa-chess-pawn team2"></i></div>
+                    <div class="cell even"><i class="fas fa-chess-pawn team2"></i></div>
+                    <div class="cell odd"><i class="fas fa-chess-pawn team2"></i></div>
+                    <div class="cell even"><i class="fas fa-chess-pawn team2"></i></div>
+                    <div class="cell odd"><i class="fas fa-chess-pawn team2"></i></div>
+                    <div class="cell even"><i class="fas fa-chess-pawn team2"></i></div>
+                    <div class="cell odd"><i class="fas fa-chess-pawn team2"></i></div>
+                    <div class="cell odd"></div>
+                    <div class="cell even"></div>
+                    <div class="cell odd"></div>
+                    <div class="cell even"></div>
+                    <div class="cell odd"></div>
+                    <div class="cell even"></div>
+                    <div class="cell odd"></div>
+                    <div class="cell even"></div>
+                    <div class="cell even">
+                        <h1>Ö</h1>
+                    </div>
+                    <div class="cell odd">
+                        <h1>M</h1>
+                    </div>
+                    <div class="cell even">
+                        <h1>E</h1>
+                    </div>
+                    <div class="cell odd">
+                        <h1>R</h1>
+                </div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell odd"></div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell even"></div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell even"></div>
+                <div class="cell odd"></div>
+                <div class="cell odd"><i class="fas fa-chess-pawn team1"></i></div>
+                <div class="cell even"><i class="fas fa-chess-pawn team1"></i></div>
+                <div class="cell odd"><i class="fas fa-chess-pawn team1"></i></div>
+                <div class="cell even"><i class="fas fa-chess-pawn team1"></i></div>
+                <div class="cell odd"><i class="fas fa-chess-pawn team1"></i></div>
+                <div class="cell even"><i class="fas fa-chess-pawn team1"></i></div>
+                <div class="cell odd"><i class="fas fa-chess-pawn team1"></i></div>
+                <div class="cell even"><i class="fas fa-chess-pawn team1"></i></div>
+                <div class="cell even"> <i class="fas fa-chess-rook team1"></i></div>
+                <div class="cell odd"><i class="fas fa-chess-knight team1"></i></div>
+                <div class="cell even"><i class="fas fa-chess-bishop team1"></i></div>
+                <div class="cell odd"><i class="fas fa-chess-queen team1"></i></div>
+                <div class="cell even"><i class="fas fa-chess-king team1"></i></div>
+                <div class="cell odd"><i class="fas fa-chess-bishop team1"></i></div>
+                <div class="cell even"><i class="fas fa-chess-knight team1"></i></div>
+                <div class="cell odd"><i class="fas fa-chess-rook team1"></i></div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <script>
+        function changeColor(color1,color2,sceneria) {
+            const odds = document.getElementsByClassName('odd');
+            for (let i = 0; i < odds.length; i++) {
+                odds[i].style.backgroundColor = color1;
+            }
+            const evens = document.getElementsByClassName('even');
+            for (let i = 0; i < evens.length; i++) {
+                evens[i].style.backgroundColor = color2;
+            }
+            if(sceneria=='dark'){
+                console.log(document.getElementsByTagName("main")[0].style)
+                document.getElementsByTagName("main")[0].style.backgroundImage = "url('https://t3.ftcdn.net/jpg/03/72/89/42/360_F_372894220_pvZcRm6T6EkRLPcUBYvFCBKQ5TbM4rlj.jpg')";
+                document.getElementsByTagName("section")[0].style.backgroundImage = "url('https://i.pinimg.com/originals/6c/a1/ce/6ca1ce7b7f4728332f8899b198adf5ff.png')";
+            }
+            else{
+                document.getElementsByTagName("main")[0].style.backgroundImage = "url('https://images.unsplash.com/photo-1561016444-14f747499547?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8&w=1000&q=80')";
+                document.getElementsByTagName("section")[0].style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4VEdT5MIBtnROsvOWRNprQ84aW4N4PVK8A&usqp=CAU')";
+            }
+        }
+    </script>
+</body>
+
+</html>

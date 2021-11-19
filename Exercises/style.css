@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin-bottom:40px;
+}
+header h1{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: cyan;
+   
+}
+
+section li:nth-child(2){
+    color: blue;
+}
+.header{
+    color: rgb(255,165,0);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+footer a:visited{
+    color: green;
+}
+footer a:hover{
+    color: red;
+}
+.box-model {
+    padding: 5px;
+    margin: 10%;
+}
+.tree{
+    border-radius: 50%;
+}

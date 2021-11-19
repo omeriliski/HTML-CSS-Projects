@@ -1,0 +1,140 @@
+/* body{
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+    background-size: cover;
+} */
+/* *{
+    border: 1px solid red;
+} */
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.header1{
+    background-color: #2753CB;
+    height: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header1 h3{
+    font-weight:lighter;
+    font-size: 20px;
+}
+.logoWrapper{
+    margin-right: 10rem;
+}
+.dciLogo{
+    width: 100px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    margin-top: 1rem;
+
+}
+.navbar li{
+    color:#06133D;
+    list-style-type: none;
+    display: inline;
+    margin-right: 1.5rem;
+    font-weight:bold;
+    font-size: 18px;
+}
+.navbar a{
+    text-decoration: none;
+    
+}
+.navbar li:hover{
+    color: #2959D8;
+}
+
+.content1{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    /* border: 2px solid blue; */
+}
+
+.content1HeaderWrapper{
+    width: 40%;
+}
+
+.content1 h1{
+    margin-top: 5rem;
+    font-size: 42px;
+    line-height: 50px;
+    color: #04083c;
+    font-weight:900;
+}
+
+.content1 p{
+    font-size: 20px;
+    line-height: 34px;
+    color: #46464a;
+    font-weight: 300;
+}
+
+.browseButton{
+    background-color:#d47857 ;
+    width: 200px;
+    height: 50px;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 5px 10px 18px #c48f7c;
+    border-radius: 5px;
+    border: none;
+}
+.browseButton:hover{
+    background-color: #E45622;
+    box-shadow: 5px 15px 18px #c48f7c;
+    cursor: pointer;
+}
+
+.content1ImgWrapper{
+    margin-left: 2rem;
+    width: 60%;
+    position: relative;
+}
+.blueDiv{
+    background-color:#2753CB;
+    height: 300px;
+    width: 280px;
+}
+.blueDiv2{
+    margin-left: 300px;
+}
+
+.content1Img{
+    width:550px;
+    position: absolute;
+    left: 10px;
+    top: 80px;
+}
+
+.footer{
+    background-color:#F8F9FA;
+    text-align: center;
+    padding: 1rem;
+}
+.footer h4{
+    color:#868686;
+}
+.footerImagesWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.footerImagesWrapper img{
+    filter: grayscale(100%);
+    width: 110px;
+}
+
+.footerImagesWrapper img:hover{
+    filter: grayscale(0%)
+}
